@@ -1,0 +1,219 @@
+.document_body {
+    background-color: #ECF5FD;
+    padding: 100px 0px 170px 0px;
+    border-radius: 20px;
+    margin: 0px 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .document_body {
+        margin: 0px 10px;
+    }
+}
+
+.document_border {
+    width: 80%;
+    margin: auto;
+}
+
+.integrated_system {
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 25%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .integrated_system {
+        width: 88%;
+    }
+}
+
+.integrated_system p {
+    text-align: center;
+    background-color: white;
+    padding: 6px;
+    border-radius: 10px;
+    color: grey !important;
+}
+
+.description {
+    font-family: sans-serif;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 40px;
+    }
+}
+
+.more_description {
+    font-family: sans-serif;
+    color: grey !important;
+    text-align: center;
+}
+
+.register_more {
+    text-align: center;
+}
+
+.register_more button {
+    margin: 30px 10px;
+    padding: 13px 25px;
+    border-radius: 7px;
+    border: unset !important;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.register_more a:first-child button {
+    background-color: #31D2F2 !important;
+    color: white;
+}
+
+.register_more a:nth-child(2) button {
+    background-color: white;
+    border: 1px solid #31D2F2 !important;
+    color: #31D2F2 !important;
+}
+
+.african {
+    position: absolute;
+    left: 35%;
+    width: 35%;
+    z-index: 1;
+}
+
+.african img {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .african {
+        left: 5%;
+        width: 70%;
+    }
+
+    .african img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 919px) {
+    .african {
+        width: 30%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .african {
+        width: 30%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 987px) {
+    .african {
+        width: 30%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .african {
+        width: 30%;
+        left: 20%;
+    }
+}
+
+.revenue_image {
+    width: 150px;
+    position: relative;
+    left: 15%;
+    background-color: transparent;
+    overflow: visible;
+}
+
+.revenue_image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .revenue_image {
+        width: 130px;
+        left: 60%;
+    }
+}
+
+.payment_image {
+    width: 180px;
+    position: relative;
+    left: 32%;
+    top: 100px;
+    background-color: transparent;
+    overflow: visible;
+}
+
+.payment_image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .payment_image {
+        display: none;
+    }
+}
+
+.stock_img {
+    position: relative;
+    width: 150px;
+    left: 15%;
+    top: 130px;
+    background-color: transparent;
+    overflow: visible;
+}
+
+.stock_img img {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .stock_img {
+        width: 120px;
+        left: 3%;
+    }
+}
+
+.sales_image {
+    left: 75%;
+    top: 0px;
+    position: relative;
+    width: 150px;
+}
+
+.sales_image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .sales_image {
+        left: 60%;
+        width: 120px;
+    }
+}
+
+.assistant_image_2 img {
+    width: 100%;
+}
+
+.assistant_description_title {
+    font-family: sans-serif;
+    font-size: 47px;
+    font-weight: bold;
+}

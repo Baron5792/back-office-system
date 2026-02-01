@@ -1,0 +1,150 @@
+:root {
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    padding: 15px 0px;
+}
+
+.sticky_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    animation: slideInDown 0.3s ease;
+    background-color: #ffffff;
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.logo {
+    width: 70%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .logo {
+        width: 40%;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .desktop_nav_links {
+        display: none;
+    }
+}
+
+.nav_links {
+    text-decoration: none;
+    display: flex;
+    padding: 8px 0px;
+}
+
+
+.nav_links a {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #001A32;
+    transition: 1s ease-in;
+}
+
+.nav_links a:hover {
+    color: #31D2F2;
+}
+
+.toggle_btn button {
+    border: unset !important;
+}
+
+.login_btn button {
+    background-color: #31D2F2 !important;
+}
+
+@media screen and (max-width: 990px) {
+    .login_btn {
+        display: none;
+    }
+}
+
+.menu_btn {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .menu_btn {
+        display: block;
+    }
+
+    .menu_btn button {
+        font-size: 26px;
+        padding: 0px;
+        border: unset !important;
+    }
+}
+
+.display_mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .display_mobile_menu {
+        display: block;
+        position: fixed;
+        z-index: 1100;
+        top: 0;
+        background-color: #F6F9FC;
+        width: 80%;
+        padding: 20px;
+        height: 100vh;
+        animation: slowlyOpenNav 0.3s ease;
+    }
+}
+
+@keyframes slowlyOpenNav {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.hide_mobile_menu {
+    display: none;
+}
+
+.mobile_menu_logo {
+    width: 40%;
+}
+
+.mobile_menu_logo img {
+    width: 100%;
+}
+
+.mobile_menu_links {
+    padding: 30px 0px;
+    display: block;
+}
+
+.mobile_menu_links a {
+    display: block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 6px 0px;
+    color: #001A32;
+    font-weight: bold;
+}
+

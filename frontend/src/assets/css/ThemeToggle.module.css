@@ -1,0 +1,70 @@
+:root {
+    --light-background-color: #ffffff;
+    --light-text-color: #333333;
+    --dark-background-color: #23272F;
+    --dark-text-color: #f5f5f5;
+    --title_color: #54B7CE;
+    --sub_title_color: #54B7CE;
+}
+
+/* for darkmode */
+body.dark-mode {
+    background-color: var(--dark-background-color);
+}
+
+body.dark-mode div {
+    background-color: var(--dark-background-color);
+}
+
+body.dark-mode a {
+    color: #CCCDD2;
+    /* text-decoration: underline; */
+}
+
+body.dark-mode p {
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: unset;
+    color: white;
+}
+
+body.dark-mode button::after {
+    background-color: unset;
+}
+
+body.dark-mode input, body.dark-mode select, body.dark-mode textarea {
+    background-color: #343A46;
+    color: white;
+}
+
+body.dark-mode input::placeholder, body.dark-mode textarea::placeholder {
+    color: grey;
+}
+
+body.dark-mode input:focus, body.dark-mode select:focus, body.dark-mode textarea:focus {
+    background-color: #343A46;
+    color: white;
+}
+
+body.dark-mode .swal2-popup {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+    /* Stronger shadow for depth in dark mode */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 
+                0 5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #3e4451; /* Optional: subtle border to define the edge */
+}
+
+body.dark-mode .swal2-container {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode button:not([class^="swal2"]) {
+    background-color: unset;
+}
+
+
+
+/* light mode */
