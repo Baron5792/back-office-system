@@ -40,7 +40,9 @@ const PublicHeader = () => {
                         {/* logo */}
                         <div className="col-8 col-md-8 col-lg-2">
                             <div className={styles['logo']}>
-                                <img src={Logo} alt={`${import.meta.env.VITE_APP_NAME} logo`} />
+                                <NavLink to={'/'}>
+                                    <img src={Logo} alt={`${import.meta.env.VITE_APP_NAME} logo`} />
+                                </NavLink>
                             </div>
                         </div>
                         {/* links */}
@@ -59,7 +61,9 @@ const PublicHeader = () => {
                         </div>
                         {/* login button */ }
                         <div className={`${styles['login_btn']} col-lg-2 col-0 col-md-2`}>
-                            <button type="button" className='btn btn-info text-white bi bi-box-arrow-in-right'></button>
+                            <NavLink to={'account/login'}>
+                                <button type="button" className='btn btn-info text-white bi bi-box-arrow-in-right'></button>
+                            </NavLink>
                         </div>
                          <div className={`${styles['menu_btn']} col-lg-2 col-2 col-md-2`}>
                             <button onClick={() => setMobileMenu(!mobileMenu)} type="button" className={`btn btn-normal text-secondary ${mobileMenu ? `bi bi-x`: `bi bi-list`}`}></button>

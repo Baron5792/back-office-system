@@ -29,7 +29,7 @@ const Home = () => {
 
                     {/* register -- learn more */}
                     <div className={styles['register_more']}>
-                        <NavLink>
+                        <NavLink to={'account/register'}>
                             <button type="button">Get Started</button>
                         </NavLink>
                         <NavLink>
@@ -84,7 +84,7 @@ const Home = () => {
                         </div>
                         <div>
                             <span className='bi bi-quote fs-1'></span>
-                            <p> Stop juggling multiple tools and start managing your business from a single, centralized dashboard. Our platform automates your daily workflows, protects your sensitive data with enterprise-grade security, and grows alongside your success—from your first shop to your fiftieth. </p>
+                            <p className='container'> Stop juggling multiple tools and start managing your business from a single, centralized dashboard. Our platform automates your daily workflows, protects your sensitive data with enterprise-grade security, and grows alongside your success—from your first shop to your fiftieth. </p>
                             <span className='bi bi-quote fs-1' style={{ transform: 'rotate(180deg)' }}></span>
                         </div>
                     </div>
