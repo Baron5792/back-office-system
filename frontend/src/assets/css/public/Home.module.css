@@ -217,3 +217,51 @@
     font-size: 40px;
     font-weight: bold;
 }
+
+.empowering_container {
+    /* box-shadow: var(--shadow); */
+    padding: 30px 100px !important;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 990px) {
+    .empowering_container {
+        padding: 20px 30px !important;
+    }
+}
+
+.empowering_title {
+    text-align: center;
+    margin: 100px 0px;
+}
+
+.empowering_title p:first-child {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.empowering_title p:last-child {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: grey;
+}
+
+.empowering_desc p:first-child {
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: grey;
+}
+
+.empowering_desc p:last-child {
+    font-family: sans-serif;
+}
+
+.empowering_image {
+    width: 80%;
+    margin: auto;
+}
+
+.empowering_image img {
+    width: 100%;
+}

@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import PublicLayout from './layouts/Public';
 import Home from './public/Home';
 import Register from './public/auth/Register';
+import Account from './layouts/Account';
 
 const App = () => {
     return (
@@ -13,7 +14,9 @@ const App = () => {
                     <Route index element={<Home />} />
 
                     {/* for login and register */}
-                    <Route element={<Register />} path='account/register' />
+                    <Route element={<Account />} path='account'>
+                        <Route element={<Register />} path='register' />
+                    </Route>
                 </Route>
             </Routes>
 

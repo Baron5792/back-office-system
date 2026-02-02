@@ -25,6 +25,10 @@ body.dark-mode p {
     color: white;
 }
 
+body.dark-mode span {
+    color: grey ;
+}
+
 body.dark-mode button {
     background-color: unset;
     color: white;

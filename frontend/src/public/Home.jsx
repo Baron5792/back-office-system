@@ -8,8 +8,16 @@ import ScrollFadeIn from '../utils/ScrollFadeIn';
 import Sales from '../assets/images/home featured/sales-figure.png';
 import Empowering from '../components/Public/Empowering';
 import PosAssistant2 from '../assets/images/home featured/pos-point-of-sale-terminal-at-register-in-restaurant-2.jpg';
+import Graph from '../assets/images/home featured/Graph-2.png';
+import Loyalty from '../assets/images/home featured/Costumer-loyalty-2-e1694746847996.png';
+import Inventory from '../assets/images/home featured/stock-table-1.png';
+import Staff from '../assets/images/home featured/staff-access-2-e1694746966647.png';
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        document.title = `Home - ${import.meta.env.VITE_APP_NAME}`;
+    }, [])
     return (
         <>
             {/* fully integrated system */}
@@ -86,6 +94,53 @@ const Home = () => {
                             <span className='bi bi-quote fs-1'></span>
                             <p className='container'> Stop juggling multiple tools and start managing your business from a single, centralized dashboard. Our platform automates your daily workflows, protects your sensitive data with enterprise-grade security, and grows alongside your success—from your first shop to your fiftieth. </p>
                             <span className='bi bi-quote fs-1' style={{ transform: 'rotate(180deg)' }}></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="container">
+                <div className={styles['empowering_title']}>
+                    <p>Empowering Business Key Feature</p>
+                    <p>Automate your lending workflow with advanced machine learning. Transform the way your institution evaluates creditworthiness through real-time predictive analytics and comprehensive applicant profiling.</p>
+                </div>
+
+                <div className="row">
+                    <div className={`${styles['empowering_container']} col-12 col-md-12 col-lg-7`}>
+                        <div className={styles['empowering_desc']}>
+                            <p>Data-Driven Decision-Making</p>
+                            <p>Identify your top-selling products, track sales trends, and adjust your inventory and marketing strategies accordingly.</p>
+                        </div>
+                        <div className={styles['empowering_image']}>
+                            <img src={Graph} alt="Data-Driven Decision-Making" />
+                        </div>
+                    </div>
+                    <div className={`${styles['empowering_container']} col-12 col-md-12 col-lg-5`}>
+                        <div className={styles['empowering_desc']}>
+                            <p>Customer Loyalty</p>
+                            <p>Fast and secure payment processing is essential for customer satisfaction.</p>
+                        </div>
+                        <div className={styles['empowering_image']}>
+                            <img src={Loyalty} alt="Data-Driven Decision-Making" />
+                        </div>
+                    </div>
+                    <div className={`${styles['empowering_container']} col-12 col-md-12 col-lg-6`}>
+                        <div className={styles['empowering_desc']}>
+                            <p>Inventory Control</p>
+                            <p>Fast and secure payment processing is essential for customer satisfaction.</p>
+                        </div>
+                        <div className={styles['empowering_image']}>
+                            <img src={Inventory} alt="Data-Driven Decision-Making" />
+                        </div>
+                    </div>
+                    <div className={`${styles['empowering_container']} col-12 col-md-12 col-lg-6`}>
+                        <div className={styles['empowering_desc']}>
+                            <p>Staff Management</p>
+                            <p>Customized access for staff to prevent unauthorized access sensitive data</p>
+                        </div>
+                        <div className={styles['empowering_image']}>
+                            <img src={Staff} alt="Data-Driven Decision-Making" />
                         </div>
                     </div>
                 </div>
