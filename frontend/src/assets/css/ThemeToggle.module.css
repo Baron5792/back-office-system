@@ -49,15 +49,15 @@ body.dark-mode input::placeholder, body.dark-mode textarea::placeholder {
 
 body.dark-mode input:focus, body.dark-mode select:focus, body.dark-mode textarea:focus {
     background-color: #343A46;
-    color: white;
+    color: silver;
+    outline: unset !important;
 }
 
 body.dark-mode .swal2-popup {
     background-color: var(--dark-background-color);
     color: var(--dark-text-color);
     /* Stronger shadow for depth in dark mode */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 
-                0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 5px 10px rgba(0, 0, 0, 0.5);
     border: 1px solid #3e4451; /* Optional: subtle border to define the edge */
 }
 
@@ -69,6 +69,9 @@ body.dark-mode button:not([class^="swal2"]) {
     background-color: unset;
 }
 
+body.dark-mode label {
+    color: grey;
+}
 
 
 /* light mode */

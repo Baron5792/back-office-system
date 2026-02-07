@@ -40,7 +40,7 @@ const Home = () => {
                         <NavLink to={'account/register'}>
                             <button type="button">Get Started</button>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to={'about'}>
                             <button type="button">Learn More</button>
                         </NavLink>
                     </div>
